@@ -11,6 +11,7 @@
 #' @import h3jsr
 #' @import s2
 #' @import sf
+#' @import readr
 #' @export
 #' @examples
 #' sf_trees <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-01-28/sf_trees.csv') %>%
