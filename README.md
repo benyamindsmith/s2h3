@@ -21,7 +21,6 @@ sf_trees <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/t
        s2_level = 21,
        h3_resolution = 10)
 ```
-
 # Blog Posts
 
 (Coming Soon)
