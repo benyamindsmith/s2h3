@@ -8,18 +8,21 @@
 #' @param s2_level The desired [s2 level](https://s2geometry.io/resources/s2cell_statistics.html)
 #' @param h3_resolution The desired [h3 resolution](https://h3geo.org/docs/core-library/restable/)
 #' @import dplyr
+#' @import rlang
 #' @import h3jsr
 #' @import s2
 #' @import sf
-#' @import readr
 #' @export
 #' @examples
+#' \dontrun{
 #' sf_trees <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-01-28/sf_trees.csv') %>%
 #' filter(!is.na(latitude) | !is.na(longitude)) %>%
 #'  s2h3(longitude,
 #'       latitude,
 #'       s2_level = 21,
 #'       h3_resolution = 10)
+#'}
+#'
 
 s2h3 <- function(data,
                  long,

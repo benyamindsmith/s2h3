@@ -3,5 +3,6 @@
 export(s2h3)
 import(dplyr)
 import(h3jsr)
+import(rlang)
 import(s2)
 import(sf)

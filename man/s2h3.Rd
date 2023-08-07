@@ -21,10 +21,13 @@ s2h3(data, long, lat, s2_level, h3_resolution)
 This function is a work in progress!
 }
 \examples{
+\dontrun{
 sf_trees <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-01-28/sf_trees.csv') \%>\%
 filter(!is.na(latitude) | !is.na(longitude)) \%>\%
  s2h3(longitude,
       latitude,
       s2_level = 21,
       h3_resolution = 10)
+}
+
 }
